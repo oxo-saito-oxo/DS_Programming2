@@ -7,22 +7,22 @@ FORECAST_URL_TEMPLATE = "https://www.jma.go.jp/bosai/forecast/data/forecast/{are
 
 # 天気コードと対応する天気のマッピング
 WEATHER_CODES = {
-    '100': '晴れ',
+'100': '晴れ',
     '101': '晴れ 時々 くもり',
     '102': '晴れ 一時 雨',
-    '103': '晴れ 時々 雨',
+    '103': '晴れ 一時 雨',
     '104': '晴れ 一時 雪',
-    '105': '晴れ 時々 雪',
+    '105': '晴れ 一時 雪',
     '106': '晴れ 一時 雨か雪',
-    '107': '晴れ 時々 雨か雪',
+    '107': '晴れ 一時 雨か雪',
     '108': '晴れ 一時 雨か雷雨',
-    '110': '晴れ のち時々くもり',
+    '110': '晴れ のち時々 くもり',
     '111': '晴れ のち くもり',
     '112': '晴れ のち一時 雨',
-    '113': '晴れ のち時々 雨',
+    '113': '晴れ のち一時 雨',
     '114': '晴れ のち 雨',
     '115': '晴れ のち一時 雪',
-    '116': '晴れ のち時々 雪',
+    '116': '晴れ のち一時 雪',
     '117': '晴れ のち 雪',
     '118': '晴れ のち 雨か雪',
     '119': '晴れ のち 雨か雷雨',
@@ -32,57 +32,57 @@ WEATHER_CODES = {
     '123': '晴れ 山沿い 雷雨',
     '124': '晴れ 山沿い 雪',
     '125': '晴れ 午後は雷雨',
-    '126': '晴れ 昼頃から雨',
-    '127': '晴れ 夕方から雨',
-    '128': '晴れ 夜は雨',
-    '129': '晴れ 夜半から雨',
+    '126': '晴れ 昼頃から 雨',
+    '127': '晴れ 夕方から 雨',
+    '128': '晴れ 夜は 雨',
+    '129': '晴れ 夜半から 雨',
     '130': '朝の内 霧 後 晴れ',
     '131': '晴れ 明け方 霧',
     '132': '晴れ 朝夕 くもり',
     '140': '晴れ 時々 雨で雷を伴う',
     '160': '晴れ 一時 雪か雨',
-    '170': '晴れ 時々 雪か雨',
+    '170': '晴れ 一時 雪か雨',
     '181': '晴れ のち 雪か雨',
     '200': 'くもり',
     '201': 'くもり 時々 晴れ',
     '202': 'くもり 一時 雨',
-    '203': 'くもり 時々 雨',
+    '203': 'くもり 一時 雨',
     '204': 'くもり 一時 雪',
-    '205': 'くもり 時々 雪',
+    '205': 'くもり 一時 雪',
     '206': 'くもり 一時 雨か雪',
-    '207': 'くもり 時々 雨か雪',
+    '207': 'くもり 一時 雨か雪',
     '208': 'くもり 一時 雨か雷雨',
     '209': '霧',
-    '210': 'くもり のち時々 晴れ',
+    '210': 'くもり のち 時々 晴れ',
     '211': 'くもり のち 晴れ',
-    '212': 'くもり のち一時 雨',
-    '213': 'くもり のち時々 雨',
+    '212': 'くもり のち 一時 雨',
+    '213': 'くもり のち 一時 雨',
     '214': 'くもり のち 雨',
-    '215': 'くもり のち一時 雪',
-    '216': 'くもり のち時々 雪',
+    '215': 'くもり のち 一時 雪',
+    '216': 'くもり のち 一時 雪',
     '217': 'くもり のち 雪',
     '218': 'くもり のち 雨か雪',
     '219': 'くもり のち 雨か雷雨',
-    '220': 'くもり 朝夕一時 雨',
+    '220': 'くもり 朝夕 一時 雨',
     '221': 'くもり 朝の内一時 雨',
-    '222': 'くもり 夕方一時 雨',
-    '223': 'くもり 日中時々 晴れ',
-    '224': 'くもり 昼頃から雨',
-    '225': 'くもり 夕方から雨',
-    '226': 'くもり 夜は雨',
-    '227': 'くもり 夜半から雨',
-    '228': 'くもり 昼頃から雪',
-    '229': 'くもり 夕方から雪',
-    '230': 'くもり 夜は雪',
-    '231': 'くもり海上海岸は霧か霧雨',
-    '240': 'くもり 時々雨で 雷を伴う',
-    '250': 'くもり 時々雪で 雷を伴う',
+    '222': 'くもり 夕方 一時 雨',
+    '223': 'くもり 日中 時々 晴れ',
+    '224': 'くもり 昼頃から 雨',
+    '225': 'くもり 夕方から 雨',
+    '226': 'くもり 夜は 雨',
+    '227': 'くもり 夜半から 雨',
+    '228': 'くもり 昼頃から 雪',
+    '229': 'くもり 夕方から 雪',
+    '230': 'くもり 夜は 雪',
+    '231': 'くもり 海上海岸は霧か霧雨',
+    '240': 'くもり 時々 雨で雷を伴う',
+    '250': 'くもり 時々 雪で雷を伴う',
     '260': 'くもり 一時 雪か雨',
-    '270': 'くもり 時々 雪か雨',
+    '270': 'くもり 一時 雪か雨',
     '281': 'くもり のち 雪か雨',
     '300': '雨',
     '301': '雨 時々 晴れ',
-    '302': '雨 時々 止む',
+    '302': '雨 時々止む',
     '303': '雨 時々 雪',
     '304': '雨か雪',
     '306': '大雨',
@@ -91,18 +91,18 @@ WEATHER_CODES = {
     '309': '雨 一時 雪',
     '311': '雨 のち 晴れ',
     '313': '雨 のち くもり',
-    '314': '雨 のち時々 雪',
+    '314': '雨 のち 時々 雪',
     '315': '雨 のち 雪',
     '316': '雨か雪 のち 晴れ',
     '317': '雨か雪 のち くもり',
     '320': '朝の内雨 のち 晴れ',
     '321': '朝の内雨 のち くもり',
-    '322': '雨 朝晩一時 雪',
+    '322': '雨 朝晩 一時 雪',
     '323': '雨 昼頃から 晴れ',
     '324': '雨 夕方から 晴れ',
-    '325': '雨 夜は晴',
-    '326': '雨 夕方から雪',
-    '327': '雨 夜は雪',
+    '325': '雨 夜は 晴',
+    '326': '雨 夕方から 雪',
+    '327': '雨 夜は 雪',
     '328': '雨 一時強く降る',
     '329': '雨 一時 みぞれ',
     '340': '雪か雨',
@@ -122,15 +122,14 @@ WEATHER_CODES = {
     '414': '雪 のち 雨',
     '420': '朝の内雪 のち 晴れ',
     '421': '朝の内雪 のち くもり',
-    '422': '雪 昼頃から雨',
-    '423': '雪 夕方から雨',
-    '424': '雪 夜半から雨',
+    '422': '雪 昼頃から 雨',
+    '423': '雪 夕方から 雨',
+    '424': '雪 夜半から 雨',
     '425': '雪 一時強く降る',
     '426': '雪 のち みぞれ',
     '427': '雪 一時 みぞれ',
     '450': '雪で雷を伴う'
 }
-
 
 def get_area_info():
     try:
@@ -179,7 +178,9 @@ def main(page: ft.Page):
         selected_region = JAPAN_REGIONS_KEYS[e.control.selected_index]
         region_label.value = f"{selected_region}の都道府県を選択してください"
         list_tiles = build_list_tiles(selected_region, on_prefecture_select, regions_data)
-        prefecture_list.controls = list_tiles
+        prefecture_list.controls.clear()
+        for tile in list_tiles:
+            prefecture_list.controls.append(tile)
         prefecture_list.update()
         weather_container.controls.clear()
         weather_container.update()
@@ -193,48 +194,47 @@ def main(page: ft.Page):
         data = get_weather_forecast(area_code)
         if data:
             region_label.value = f"{prefecture_name}の天気情報"
-            weather_container.controls.clear()
             try:
                 time_series = data[0]["timeSeries"]
                 weather_areas = time_series[0]["areas"]
+                dates = time_series[0]["timeDefines"]
+                weathers = weather_areas[0]["weathers"]
+                winds = weather_areas[0]["winds"]
 
-                temps_min = temps_max = None
-                if len(time_series) > 1:
-                    for series in time_series:
-                        if "tempsMin" in series["areas"][0]:
-                            temps_min = series["areas"][0].get("tempsMin")
-                        if "tempsMax" in series["areas"][0]:
-                            temps_max = series["areas"][0].get("tempsMax")
+                temp_info_section = next((ts for ts in time_series if 'temps' in ts["areas"][0]), None)
+                max_temps = min_temps = ["データ未取得"] * len(dates)
+                if temp_info_section:
+                    temps = temp_info_section["areas"][0]["temps"]
+                    max_temps = temps[1::2]
+                    min_temps = temps[0::2]
 
-                for i, time in enumerate(time_series[0]["timeDefines"][:2]):
-                    date = datetime.datetime.strptime(time.split("T")[0], "%Y-%m-%d").strftime("%Y-%m-%d")
-                    weather_code = weather_areas[0]["weatherCodes"][i] if i < len(weather_areas[0]["weatherCodes"]) else "999"
-                    weather = WEATHER_CODES.get(weather_code, f"天気コード {weather_code}")
+                # 日付の数をチェックしながら天気情報を表示
+                for i in range(min(len(dates), 4)):  # 次の日から3日後まで
+                    if i < len(dates):
+                        date_str = datetime.datetime.fromisoformat(dates[i]).strftime('%Y-%m-%d')
+                        weather_code = weather_areas[0]["weatherCodes"][i] if i < len(weather_areas[0]["weatherCodes"]) else "999"
+                        weather = WEATHER_CODES.get(weather_code, f"天気コード {weather_code}")
+                        wind = winds[i] if i < len(winds) else "データ未取得"
+                        max_temp = max_temps[i] if i < len(max_temps) else "データ未取得"
+                        min_temp = min_temps[i] if i < len(min_temps) else "データ未取得"
 
-                    temp_min = temps_min[i] if temps_min and temps_min[i] is not None else None
-                    temp_max = temps_max[i] if temps_max and temps_max[i] is not None else None
-
-                    temp_texts = []
-                    if temp_min is not None:
-                        temp_texts.append(ft.Text(f"最低気温: {temp_min}℃", size=15, color=ft.colors.BLUE))
-                    if temp_max is not None:
-                        temp_texts.append(ft.Text(f"最高気温: {temp_max}℃", size=15, color=ft.colors.RED))
-
-                    forecast_card = ft.Container(
-                        content=ft.Column([
-                            ft.Text(f"日付: {date}", size=15, weight=ft.FontWeight.BOLD, color=ft.colors.BLACK),
-                            ft.Text(f"天気: {weather}", size=15, color=ft.colors.BLACK),
-                            ft.Image(src=f"https://www.jma.go.jp/bosai/forecast/img/{weather_code}.svg", width=50, height=50),
-                            *temp_texts
-                        ]),
-                        padding=10,
-                        border_radius=10,
-                        bgcolor=ft.colors.WHITE,
-                        alignment=ft.alignment.center,
-                        width=300,
-                        height=150  # 高さ調整
-                    )
-                    weather_container.controls.append(forecast_card)
+                        forecast_card = ft.Container(
+                            content=ft.Column([
+                                ft.Text(f"日付: {date_str}", size=15, weight=ft.FontWeight.BOLD, color=ft.colors.BLACK),
+                                ft.Text(f"天気: {weather}", size=15, color=ft.colors.BLACK),
+                                ft.Image(src=f"https://www.jma.go.jp/bosai/forecast/img/{weather_code}.svg", width=50, height=50),
+                                ft.Text(f"風: {wind}", size=15, color=ft.colors.BLACK),
+                                ft.Text(f"最高気温: {max_temp}℃", size=15, color=ft.colors.RED),
+                                ft.Text(f"最低気温: {min_temp}℃", size=15, color=ft.colors.BLUE),
+                            ]),
+                            padding=10,
+                            border_radius=10,
+                            bgcolor=ft.colors.WHITE,
+                            alignment=ft.alignment.center,
+                            width=300,
+                            height=150
+                        )
+                        weather_container.controls.append(forecast_card)
             except Exception as e:
                 print(f"Error processing weather data: {e}")
                 region_label.value = "天気情報の処理中にエラーが発生しました。"
@@ -260,57 +260,57 @@ def main(page: ft.Page):
     }
 
     region_mappings = {
-        "010000": "北海道",
-        "020000": "東北",
-        "030000": "東北",
-        "040000": "東北",
-        "050000": "東北",
-        "060000": "東北",
-        "070000": "東北",
-        "080000": "関東",
-        "090000": "関東",
-        "100000": "関東",
-        "110000": "関東",
-        "120000": "関東",
-        "130000": "関東",
-        "140000": "関東",
-        "150000": "中部",
-        "160000": "中部",
-        "170000": "中部",
-        "180000": "中部",
-        "190000": "中部",
-        "200000": "中部",
-        "210000": "中部",
-        "220000": "中部",
-        "230000": "中部",
-        "240000": "近畿",
-        "250000": "近畿",
-        "260000": "近畿",
-        "270000": "近畿",
-        "280000": "近畿",
-        "290000": "近畿",
-        "300000": "近畿",
-        "310000": "中国",
-        "320000": "中国",
-        "330000": "中国",
-        "340000": "中国",
-        "350000": "中国",
-        "360000": "四国",
-        "370000": "四国",
-        "380000": "四国",
-        "390000": "四国",
-        "400000": "九州・沖縄",
-        "410000": "九州・沖縄",
-        "420000": "九州・沖縄",
-        "430000": "九州・沖縄",
-        "440000": "九州・沖縄",
-        "450000": "九州・沖縄",
-        "460000": "九州・沖縄",
-        "470000": "九州・沖縄"
+        "01": "北海道",
+        "02": "東北",
+        "03": "東北",
+        "04": "東北",
+        "05": "東北",
+        "06": "東北",
+        "07": "東北",
+        "08": "関東",
+        "09": "関東",
+        "10": "関東",
+        "11": "関東",
+        "12": "関東",
+        "13": "関東",
+        "14": "関東",
+        "15": "中部",
+        "16": "中部",
+        "17": "中部",
+        "18": "中部",
+        "19": "中部",
+        "20": "中部",
+        "21": "中部",
+        "22": "中部",
+        "23": "中部",
+        "24": "近畿",
+        "25": "近畿",
+        "26": "近畿",
+        "27": "近畿",
+        "28": "近畿",
+        "29": "近畿",
+        "30": "近畿",
+        "31": "中国",
+        "32": "中国",
+        "33": "中国",
+        "34": "中国",
+        "35": "中国",
+        "36": "四国",
+        "37": "四国",
+        "38": "四国",
+        "39": "四国",
+        "40": "九州・沖縄",
+        "41": "九州・沖縄",
+        "42": "九州・沖縄",
+        "43": "九州・沖縄",
+        "44": "九州・沖縄",
+        "45": "九州・沖縄",
+        "46": "九州・沖縄",
+        "47": "九州・沖縄"
     }
 
     for area_code, details in area_info["offices"].items():
-        region = region_mappings.get(area_code[:2] + "0000")
+        region = region_mappings.get(area_code[:2])
         if region:
             regions_data[region][details["name"]] = {"code": area_code}
 
@@ -353,7 +353,7 @@ def main(page: ft.Page):
         ], expand=True)
     )
 
-    initial_event = type("Event", (object,), {"control": type("Control", (object,), {"selected_index": 0})})
-    on_region_change(initial_event())
+    initial_event = type("Event", (object,), {"control": type("Control", (object,), {"selected_index": 0})})()
+    on_region_change(initial_event)
 
 ft.app(target=main)
